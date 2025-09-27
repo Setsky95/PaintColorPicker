@@ -1,0 +1,13 @@
+/* Variables base ya vienen desde inline styles de Card.jsx */
+
+/* Mobile: bajar la altura un 20% (de 88px a 70.4px) y ajustar radios/cap en cadena */
+@media (max-width: 600px) {
+  .card-button {
+    --card-h: calc(88px * 0.8);          /* 70.4px */
+    --radius: calc(var(--card-h) / 2);    /* bordes redondeados actualizados */
+    --cap: calc(var(--card-h) * 0.864);   /* tapa proporcional al alto */
+    /* El ancho se mantiene; si querés achicarlo también, podés:
+       --card-w: calc(360px * 0.9);
+    */
+  }
+}

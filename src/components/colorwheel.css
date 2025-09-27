@@ -1,0 +1,100 @@
+/* Root del componente */
+.cw-root {
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+gap: 2rem;
+  box-sizing: border-box; 
+}
+/* Wrapper relativo del wheel (tamaños dinámicos) */
+.wheel-wrap {
+  position: relative;
+  width: var(--wrap-w);
+  height: var(--wrap-h);
+  transform: scale(var(--wheel-scale, 1));   /* ⟵ NUEVO */
+  width: 60%;
+  
+}
+
+/* Círculo gris del fondo */
+.wheel-bg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: var(--circle-size);
+  height: var(--circle-size);
+  border-radius: 50%;
+  background: #f1f1f1ff;
+  z-index: 0;
+}
+
+/* Contenedor del aro de tarjetas */
+.wheel-ring {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+}
+
+/* Posicionamiento polar de cada card (usa variables) */
+.wheel-card-pos {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform:
+    translate(-50%, -50%)
+    rotate(var(--angle))
+    translate(var(--inner-radius));
+  transform-origin: center center;
+}
+
+/* Centro: imagen del color activo (siempre arriba) */
+.wheel-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: var(--center-size);
+  height: var(--center-size);
+  border-radius: 50%;
+  background: transparent;
+  z-index: 9999;
+  pointer-events: none; /* no bloquea clics en cards */
+  display: grid;
+  place-items: center;
+}
+
+.wheel-center-inner {
+  display: grid;
+  gap: 8px;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 12px;
+  text-align: center;
+}
+
+.wheel-center img {
+  width: 90%;
+  height: 100%;
+  display: block;
+}
+
+/* Leyenda inferior */
+.cw-legend {
+  margin-top: 1.5rem; /* mt-6 */
+  text-align: center;
+}
+
+
+@media (max-width: 600px) {
+  .cw-root {   flex-direction: column; margin: auto; padding: auto; gap: 0;
+ }
+  .wheel-wrap {
+    transform: scale(.40);
+    height: 10rem;
+    padding: auto;
+    margin: 10rem auto;
+
+} }

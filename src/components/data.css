@@ -1,0 +1,37 @@
+.cw-legend{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.cw-legend-color-bar {
+  width: 64px;
+  height: 12px;
+  border-radius: 999px;
+  margin: 0.25rem auto 0.75rem; /* centrada arriba del texto */
+}
+
+.cw-legend-name {
+  font-size: 3rem; /* text-lg */
+  font-weight: 600; 
+  width: 21rem; 
+  margin-bottom: 1rem;   /* font-semibold */
+}
+
+.cw-legend-code {
+  font-size: 2rem;  /* text-sm */
+  opacity: 0.7;
+}
+
+.cw-legend-description {
+  font-size: 1rem;  /* text-sm */
+  opacity: 0.7;
+  width: 17rem;
+  margin: 0.5rem auto;
+}
+/* Por defecto, mostramos el texto y ocultamos el círculo */
+
+@media (max-width: 600px) {
+  .cw-legend-color-bar {
+    margin: 0.2rem auto;
+  }
+}

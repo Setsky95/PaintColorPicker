@@ -1,0 +1,83 @@
+:root{
+  --ac-t1-15a: color-mix(in srgb, color-mix(in srgb, var(--active-color) 50%, #a78bfa 30%) 11%, transparent);
+  --ac-t2-15a: color-mix(in srgb, color-mix(in srgb, var(--active-color) 50%, #60a5fa 30%) 11%, transparent);
+  --ac-t3-15a: color-mix(in srgb, color-mix(in srgb, var(--active-color) 50%, #5eead4 30%) 11%, transparent);
+}
+
+.rainbow-layer{
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+  opacity: .7;                    
+  transition: opacity 1s ease;    
+}
+.rainbow-layer.fade-out{ opacity: 0; }
+
+.rainbow{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 220vh;                  
+  width: 0;
+  transform-origin: center;
+  will-change: transform, filter;
+
+    animation: slide var(--dur, 270s) linear infinite;
+
+  animation-duration: calc(
+    var(--dur, 270s) - (var(--dur, 270s) / var(--len, 48) / 2) * var(--i, 1)
+  );
+  animation-delay: calc(
+    -1 * var(--i, 1) / var(--len, 48) * var(--dur, 270s) - var(--phase, 0) * var(--dur, 270s)
+  );
+
+  filter: blur(.2px);
+}
+
+@keyframes slide{
+  from{ transform: translate(-180vw, calc(-50% + var(--j, 0vh))) rotate(12deg); }
+  to  { transform: translate( 180vw, calc(-50% + var(--j, 0vh))) rotate(12deg); }
+}
+
+.rainbow.seq1{ box-shadow:
+  -130px 0 80px 40px white,
+   -50px 0 50px 25px var(--ac-t1-15a),
+     0   0 50px 25px var(--ac-t2-15a),
+    50px 0 50px 25px var(--ac-t3-15a),
+  130px 0 80px 40px white; }
+.rainbow.seq2{ box-shadow:
+  -130px 0 80px 40px white,
+   -50px 0 50px 25px var(--ac-t1-15a),
+     0   0 50px 25px var(--ac-t3-15a),
+    50px 0 50px 25px var(--ac-t2-15a),
+  130px 0 80px 40px white; }
+.rainbow.seq3{ box-shadow:
+  -130px 0 80px 40px white,
+   -50px 0 50px 25px var(--ac-t3-15a),
+     0   0 50px 25px var(--ac-t1-15a),
+    50px 0 50px 25px var(--ac-t2-15a),
+  130px 0 80px 40px white; }
+.rainbow.seq4{ box-shadow:
+  -130px 0 80px 40px white,
+   -50px 0 50px 25px var(--ac-t3-15a),
+     0   0 50px 25px var(--ac-t2-15a),
+    50px 0 50px 25px var(--ac-t1-15a),
+  130px 0 80px 40px white; }
+.rainbow.seq5{ box-shadow:
+  -130px 0 80px 40px white,
+   -50px 0 50px 25px var(--ac-t2-15a),
+     0   0 50px 25px var(--ac-t3-15a),
+    50px 0 50px 25px var(--ac-t1-15a),
+  130px 0 80px 40px white; }
+.rainbow.seq6{ box-shadow:
+  -130px 0 80px 40px white,
+   -50px 0 50px 25px var(--ac-t2-15a),
+     0   0 50px 25px var(--ac-t1-15a),
+    50px 0 50px 25px var(--ac-t3-15a),
+  130px 0 80px 40px white; }
+
+@media (max-width: 600px){
+  .rainbow{ animation-duration: calc(var(--dur, 270s) * 1.2); }
+}

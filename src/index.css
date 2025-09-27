@@ -1,0 +1,51 @@
+:root {
+ --font-ui: "Oswald", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  --font-display: "Poetsen One", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;  line-height: 1.1;
+  font-weight: 400;
+
+    --active-color: #888888;                     
+  --active-color-15a: rgba(136,136,136,.15);   
+
+  --ac-t1: color-mix(in srgb, var(--active-color) 70%, #a78bfa 30%); 
+  --ac-t2: color-mix(in srgb, var(--active-color) 70%, #60a5fa 30%); 
+  --ac-t3: color-mix(in srgb, var(--active-color) 70%, #5eead4 30%); 
+
+  --ac-t1-15a: color-mix(in srgb, var(--ac-t1) 15%, transparent);
+  --ac-t2-15a: color-mix(in srgb, var(--ac-t2) 15%, transparent);
+  --ac-t3-15a: color-mix(in srgb, var(--ac-t3) 15%, transparent);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+
+
+.font-ui      { font-family: var(--font-ui); }
+.font-display { font-family: var(--font-display); }
+
+
+body {
+  margin: 0;
+   background: var(--active-color-15a);}
+
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: none;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+
+}
+
+html, body { font-family: var(--font-ui); }
+
