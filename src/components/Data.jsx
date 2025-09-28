@@ -1,5 +1,6 @@
-import ReactMarkdown from "react-markdown";
-import "./data.css";
+import ReactMarkdown from 'react-markdown'
+import remarkGfm from 'remark-gfm'
+import rehypeRaw from 'rehype-raw'import "./data.css";
 
 export default function Data({ name, code, hex, description }) {
   if (!name && !code) return null;

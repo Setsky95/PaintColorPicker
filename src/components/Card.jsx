@@ -2,11 +2,10 @@ import { useState } from "react";
 
 
 export default function Card({ item, style, onClick, isActive }) {
-  // Dimensiones del card (podés ajustarlas)
-  const W = 360; // ancho total
-  const H = 88;  // alto total
+  const W = 360; 
+  const H = 88; 
   const R = H / 2;
-  const CAP = 76; // tapa blanca izquierda (diámetro aprox)
+  const CAP = 76; 
 
   const [hovered, setHovered] = useState(false);
 
