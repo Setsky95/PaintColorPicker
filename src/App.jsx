@@ -25,10 +25,14 @@ export default function App() {
 
   return (
     <>
-    <RainbowBG /> 
+      <RainbowBG /> 
       <Title
-        text="Decorá. Renová. Disfrutá."
-        underlineColor={active?.hex || "#3d444dff"}
+        text={
+          <>
+            Decorá. Renová. <b>Disfrutá.</b>
+          </>
+        }
+        underlineColor={active?.hex || "#474c52ff"}
       />
 
       <ColorWheel
@@ -37,7 +41,6 @@ export default function App() {
         wheelScale={0.6}
         onActiveChange={setActive}
       />
-      
     </>
   );
 }
