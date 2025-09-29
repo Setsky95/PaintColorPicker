@@ -27,11 +27,42 @@
   width: 17rem;
   margin: 0 auto;
 }
+.data-atributos{
+gap: 0.5rem;
+  display: flex;
+  justify-content: center;
+}
 
 
+.data-atributo{
+  color: rgb(53, 53, 53);
+  outline: 1.5px solid rgb(53, 53, 53);
+  border-radius: 8px;
+  padding: 0 0.5rem;
+}
+
+.data-buttons{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.data-atributo{
+  background-color: transparent;
+}
 
 @media (max-width: 600px) {
   .cw-legend-color-bar {
     margin: 0 auto;
   }
+
+  .data-atributos{
+margin:0;
+}
+
+.data-buttons{
+margin-bottom: 1rem;
+}
+
 }
