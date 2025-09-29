@@ -3,7 +3,8 @@ import remarkGfm from 'remark-gfm';
 import rehypeRaw from 'rehype-raw';
 import './data.css';
 
-export default function Data({ name, code, hex, description }) {
+export default function Data
+({ name, code, hex, description, galeria }) {
   if (!name && !code) return null;
 
   const color = hex ?? (code ? (code.startsWith("#") ? code : `#${code}`) : "#000");
@@ -12,9 +13,10 @@ export default function Data({ name, code, hex, description }) {
     <div className="cw-legend">
       <div className="cw-legend-color-bar" style={{ backgroundColor: color }} />
 
-      {name && <div className="cw-legend-name">{name}</div>}
+      {name && code && <div className="cw-legend-name">{name}</div>}
 
       {code && <div className="cw-legend-code">{code}</div>}
+
 
 
       {description && (

@@ -1,6 +1,5 @@
 :root {
  --font-ui: "Oswald", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  --font-display: "Poetsen One", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;  line-height: 1.1;
   font-weight: 400;
 
     --active-color: #888888;                     

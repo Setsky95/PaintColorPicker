@@ -1,0 +1,35 @@
+.cw-legend-galeria{
+    display: flex;
+    flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+
+}
+.cw-legend-color-bar-galeria {
+  width: 10px;
+  height: 60px;
+  border-radius: 999px;
+  margin:  2rem;
+
+}
+
+.cw-legend-name-galeria {
+  font-size: 3rem; 
+  font-weight: 600; 
+  width: 20rem; 
+}
+
+.cw-legend-code-galeria {
+  font-size: 1.6rem;  
+  opacity: 0.7;
+}
+
+
+
+
+@media (max-width: 600px) {
+  .cw-legend-galeria{
+    display: none
+
+}
+}

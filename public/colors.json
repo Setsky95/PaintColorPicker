@@ -4,69 +4,79 @@
     "hex": "#B266FF",
     "code": "B266FF",
     "image": "/img/violet-.png",
-    "description": "El **Violet full** es un violeta intenso y **creativo**, perfecto para proyectos con personalidad. Sugiere **imaginación** y un toque de lujo contemporáneo. Funciona genial en gradientes y como color de acento para iconografía. En fondos oscuros produce un brillo **eléctrico** muy atractivo."
+    "description": "El **Violet full** es un violeta intenso y **creativo**, perfecto para proyectos con personalidad. Sugiere **imaginación** y un toque de lujo contemporáneo. Funciona genial en gradientes y como color de acento para iconografía. En fondos oscuros produce un brillo **eléctrico** muy atractivo.",
+    "galeria": "Violet-full"
   },
   {
     "name": "Big pink",
     "hex": "#E782C0",
     "code": "E782C0",
     "image": "/img/big-pink.png",
-    "description": "El **Big pink** es dulce pero **moderno**, con carácter de marca lifestyle. Añade un tono **emocional** que humaniza formularios y vacíos de contenido. En interfaces móviles se percibe vibrante sin saturar. Úsalo con líneas finas y blancos para un look **elegante**."
+    "description": "El **Big pink** es dulce pero **moderno**, con carácter de marca lifestyle. Añade un tono **emocional** que humaniza formularios y vacíos de contenido. En interfaces móviles se percibe vibrante sin saturar. Úsalo con líneas finas y blancos para un look **elegante**.",
+    "galeria": "Big-pink"
   },
   {
     "name": "Red Chalk",
     "hex": "#FD6C6C",
     "code": "FD6C6C",
     "image": "/img/red-chalk.png",
-    "description": "El **Red Chalk** es un rojo vivo con una pátina de tiza que transmite **energía** y **urgencia**. Funciona excelente para llamados a la acción y etiquetas que deben destacarse. En interfaces largas ayuda a crear puntos de **foco visual**. Combínalo con fondos claros para un contraste nítido."
+    "description": "El **Red Chalk** es un rojo vivo con una pátina de tiza que transmite **energía** y **urgencia**. Funciona excelente para llamados a la acción y etiquetas que deben destacarse. En interfaces largas ayuda a crear puntos de **foco visual**. Combínalo con fondos claros para un contraste nítido.",
+    "galeria": "Red-Chalk"
   },
   {
-    "name": "Salmon Orange",
+    "name": "Copper Orange",
     "hex": "#E36D4F",
     "code": "E36D4F",
     "image": "/img/salmon-orange.png",
-    "description": "El **Salmon Orange** combina la calidez del naranja con un toque **gourmet**. Es cercano, apetitoso y excelente para CTAs con tono humano. En gradientes hacia cremas genera transiciones **suaves**. Aporta dinamismo sin caer en lo estridente."
+    "description": "El **Copper Orange** combina la calidez del naranja con un toque **gourmet**. Es cercano, apetitoso y excelente para CTAs con tono humano. En gradientes hacia cremas genera transiciones **suaves**. Aporta dinamismo sin caer en lo estridente.",
+    "galeria": "Salmon-Orange"
   },
   {
     "name": "Yellow Chalk",
     "hex": "#FFD966",
     "code": "FFD966",
     "image": "/img/yellow-chalk.png",
-    "description": "El **Yellow Chalk** irradia **optimismo** y **calidez**. Aporta luz a secciones densas y guía la mirada sin agobiar. Es un gran aliado para alertas **amables** o micro-interacciones. Con tipografía oscura mantiene una **accesibilidad** excelente."
+    "description": "El **Yellow Chalk** irradia **optimismo** y **calidez**. Aporta luz a secciones densas y guía la mirada sin agobiar. Es un gran aliado para alertas **amables** o micro-interacciones. Con tipografía oscura mantiene una **accesibilidad** excelente.",
+    "galeria": "Yellow-Chalk"
   },
   {
     "name": "Wild green",
     "hex": "#92e782",
     "code": "92e782",
     "image": "/img/wild-green.png",
-    "description": "El **Wild green** suena a hoja fresca y a proyectos **sustentables**. Inspira bienestar y cercanía con la naturaleza. En dashboards aporta descanso visual entre bloques de datos. Combina de maravilla con neutros cálidos y acentos **terrosos**."
+    "description": "El **Wild green** suena a hoja fresca y a proyectos **sustentables**. Inspira bienestar y cercanía con la naturaleza. En dashboards aporta descanso visual entre bloques de datos. Combina de maravilla con neutros cálidos y acentos **terrosos**.",
+    "galeria": "Wild-green"
   },
   {
     "name": "Avocado green",
     "hex": "#AEAC28",
     "code": "AEAC28",
     "image": "/img/avocado-green.png",
-    "description": "El **Avocado green** huele a orgánico y **bienestar**. Su vibra terrosa conecta con marcas eco, alimentación o salud. Da presencia a botones secundarios y etiquetas. En combinación con maderas o texturas **naturales** luce especialmente bien."
+    "description": "El **Avocado green** huele a orgánico y **bienestar**. Su vibra terrosa conecta con marcas eco, alimentación o salud. Da presencia a botones secundarios y etiquetas. En combinación con maderas o texturas **naturales** luce especialmente bien.",
+    "galeria": "Avocado-green"
   },
   {
     "name": "Ocean blue",
     "hex": "#434194",
     "code": "434194",
     "image": "/img/ocean-blue.png",
-    "description": "El **Ocean blue** es profundo y **contemplativo**. Evoca confianza y precisión, ideal para analítica, ciencia o finanzas. Sobre blancos ofrece un contraste **limpio** y serio. Funciona muy bien con acentos turquesa o lilas fríos."
+    "description": "El **Ocean blue** es profundo y **contemplativo**. Evoca confianza y precisión, ideal para analítica, ciencia o finanzas. Sobre blancos ofrece un contraste **limpio** y serio. Funciona muy bien con acentos turquesa o lilas fríos.",
+    "galeria": "Ocean-blue"
   },
   {
     "name": "Blue Chalk",
     "hex": "#61A7FF",
     "code": "61A7FF",
     "image": "/img/blue-chalk.png",
-    "description": "El **Blue Chalk** respira **confianza** y **calma**. Evoca cielos despejados y un tono tecnológico amable. Es ideal para encabezados o tarjetas informativas donde necesites serenidad sin perder **legibilidad**. Destaca muy bien junto a grises fríos."
+    "description": "El **Blue Chalk** respira **confianza** y **calma**. Evoca cielos despejados y un tono tecnológico amable. Es ideal para encabezados o tarjetas informativas donde necesites serenidad sin perder **legibilidad**. Destaca muy bien junto a grises fríos.",
+    "galeria": "Blue-Chalk"
   },
   {
     "name": "Grey  calm",
     "hex": "#443E40",
     "code": "443E40",
     "image": "/img/grey-calm.png",
-    "description": "El **Grey calm** es sobrio y **equilibrado**. Sirve como base neutra para que los acentos respiren. Su matiz ligeramente cálido mejora la **lectura** en tipografía clara. Ideal para barras, marcos y divisores que no deben competir por atención."
+    "description": "El **Grey calm** es sobrio y **equilibrado**. Sirve como base neutra para que los acentos respiren. Su matiz ligeramente cálido mejora la **lectura** en tipografía clara. Ideal para barras, marcos y divisores que no deben competir por atención.",
+    "galeria": "Grey-calm"
   }
 ]

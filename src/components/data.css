@@ -14,7 +14,6 @@
   font-size: 3rem; 
   font-weight: 600; 
   width: 21rem; 
-  margin-bottom: 1rem;  
 }
 
 .cw-legend-code {
@@ -26,13 +25,13 @@
   font-size: 1rem;  
   opacity: 0.7;
   width: 17rem;
-  margin: 0.5rem auto;
+  margin: 0 auto;
 }
 
 
 
 @media (max-width: 600px) {
   .cw-legend-color-bar {
-    margin: 0.2rem auto;
+    margin: 0 auto;
   }
 }

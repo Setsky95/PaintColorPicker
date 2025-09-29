@@ -1,0 +1,113 @@
+/* Wrapper general */
+.gf-wrapper {
+display: flex; /* Mobile por defecto */
+flex-direction: column;
+gap: 1rem; /* 16px */
+}
+
+
+/* Columnas (se comportan como wrappers) */
+.gf-col { display: flex; flex-direction: column; gap: 1rem; }
+
+
+/* Tarjeta base */
+.gf-tile {
+position: relative;
+overflow: hidden;
+border-radius: 1.25rem; /* ~20px */
+background: #f6f6f6;
+}
+
+
+.gf-tile img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+
+/* Proporciones por defecto (mobile) */
+.gf-rt, .gf-rm, .gf-rb { aspect-ratio: 16 / 9; }
+.gf-center-tile { aspect-ratio: 3 / 4; }
+.gf-tl, .gf-bl { aspect-ratio: 4 / 3; }
+
+
+/* Orden en MOBILE (pila) */
+.gf-right { order: 1; }
+.gf-center { order: 2; }
+.gf-left { order: 3; }
+
+
+/* Desktop: tres columnas sin superposición */
+@media (min-width: 768px) {
+.gf-wrapper {
+display: grid;
+grid-template-columns: 1fr 1.1fr 1fr; /* centro un poco más ancho */
+gap: 1.5rem; /* 24px */
+align-items: stretch;
+}
+
+
+/* IMPORTANTE: resetear el order para grid (así no hereda el de mobile) */
+.gf-left, .gf-center, .gf-right { order: 0; }
+
+
+/* Forzar posición de columnas */
+.gf-left { grid-column: 1; align-self: start; }
+.gf-center{ grid-column: 2; height: 100%; }
+.gf-right { grid-column: 3; align-self: start; }
+
+
+/* Centro ocupa el alto disponible (sin aspect-ratio) */
+.gf-center .gf-center-tile { aspect-ratio: auto; height: 100%; min-height: 100%; }
+
+
+.gf-left{
+  align-self: stretch;        /* que estire como las otras columnas */
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: var(--gf-gap, 12px);
+  height: 100%;
+}
+
+/* Solo la de arriba en 4:3 */
+/* Columna izquierda: 2 apiladas; la 2da ocupa el resto */
+.gf-left{
+  align-self: start;              /* <- no estires la columna */
+  display: flex;
+  flex-direction: column;
+  gap: var(--gf-gap, 12px);
+}
+
+/* Solo la de arriba en 4:3 */
+.gf-left .gf-tl{ aspect-ratio: 4 / 3; }
+
+/* La de abajo llena el espacio restante de la columna */
+.gf-left .gf-bl{
+  flex: 1 1 auto;
+  min-height: 0;
+}
+.gf-left .gf-bl img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* (Opcional) Asegurá que la foto 3 no herede alturas raras */
+.gf-center .gf-center-tile,
+.gf-center .gf-center-tile img{
+    object-fit: cover;
+
+}
+
+
+/* Centro: ocupa todo el alto disponible, sin aspect-ratio para que no fuerce altura */
+.gf-center { height: 100%;  }
+.gf-center .gf-center-tile {
+aspect-ratio: auto; /* anula el ratio en desktop */
+height: 100%;
+min-height: 100%;
+
+}
+
+
+/* Derecha: tres 16:9 apiladas */
+.gf-right { align-self: start; }
+.gf-right .gf-rt, .gf-right .gf-rm, .gf-right .gf-rb { aspect-ratio: 16 / 9; }
+}
