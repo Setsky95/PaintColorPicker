@@ -41,19 +41,19 @@
   },
   {
     "name": "Wild green",
-    "hex": "#92e782",
-    "code": "92e782",
+    "hex": "#59C274",
+    "code": "59C274",
     "image": "/img/wild-green.png",
     "description": "El **Wild green** suena a hoja fresca y a proyectos **sustentables**. Inspira bienestar y cercanía con la naturaleza. En dashboards aporta descanso visual entre bloques de datos. Combina de maravilla con neutros cálidos y acentos **terrosos**.",
     "galeria": "Wild-green"
   },
   {
-    "name": "Avocado green",
+    "name": "Olive green",
     "hex": "#AEAC28",
     "code": "AEAC28",
     "image": "/img/avocado-green.png",
-    "description": "El **Avocado green** huele a orgánico y **bienestar**. Su vibra terrosa conecta con marcas eco, alimentación o salud. Da presencia a botones secundarios y etiquetas. En combinación con maderas o texturas **naturales** luce especialmente bien.",
-    "galeria": "Avocado-green"
+    "description": "El **Olive green** huele a orgánico y **bienestar**. Su vibra terrosa conecta con marcas eco, alimentación o salud. Da presencia a botones secundarios y etiquetas. En combinación con maderas o texturas **naturales** luce especialmente bien.",
+    "galeria": "olive-green"
   },
   {
     "name": "Ocean blue",
