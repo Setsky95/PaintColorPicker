@@ -32,8 +32,8 @@ export default function ColorWheel({
           description: d.description ?? "",
         }));
         setItems(normalized);
-      setActiveIdx(1);
-if (normalized[1]) onActiveChange(normalized[1]);
+      setActiveIdx(2);
+if (normalized[2]) onActiveChange(normalized[2]);
 
       })
       .catch((e) => console.error("Error cargando colors.json", e));
