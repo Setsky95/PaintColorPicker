@@ -4,6 +4,7 @@ import Data from "./Data";
 import "./colorwheel.css";
 import GaleriaFotos from "./GaleriaFotos";
 import GaleriaTitle from "./GaleriaTitle";
+import UpButton from "./UpButton";
 export default function ColorWheel({
   jsonUrl = "/colors.json",
   wheelRadius = 220,
@@ -135,7 +136,12 @@ if (normalized[2]) onActiveChange(normalized[2]);
     <div style={{ opacity: 0.7 }}>Cargando color…</div>
   )}
 </div>
-
+ {activeItem ? (
+   <UpButton
+     hex={activeItem.hex ?? "#000"}
+   />
+   
+ ) : null}
       </div>
   );
 }

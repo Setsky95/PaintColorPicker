@@ -1,0 +1,51 @@
+/* Base */
+.upbutton {
+  --upbutton-bg: #111827;
+  --upbutton-size: 56px;
+  --upbutton-fg: #ffffff;
+
+  width: var(--upbutton-size);
+  height: var(--upbutton-size);
+  border: none;
+  border-radius: 9999px;
+  background: var(--upbutton-bg);
+  color: var(--upbutton-fg);
+
+  /* visible en mobile */
+  display: flex;               /* contenedor flex (centrado del ícono) */
+  align-items: center;
+  justify-content: center;
+
+  /* centrado horizontal + márgenes */
+  margin: 1rem auto;           /* 1rem arriba/abajo y centrado en X */
+
+  cursor: pointer;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Ícono */
+.upbutton__icon {
+  width: calc(var(--upbutton-size) * 0.46);
+  height: calc(var(--upbutton-size) * 0.46);
+  display: block;
+}
+
+/* Tamaños opcionales */
+.upbutton--sm { --upbutton-size: 40px; }
+.upbutton--md { --upbutton-size: 56px; }
+.upbutton--lg { --upbutton-size: 72px; }
+
+/* Tema opcional */
+.upbutton--light { --upbutton-fg: #111827; }
+.upbutton--dark  { --upbutton-fg: #ffffff; }
+
+/* Hover/active (opcionales, suaves) */
+.upbutton:hover:not(:disabled) { transform: translateY(-1px); }
+.upbutton:active:not(:disabled) { transform: translateY(0); }
+.upbutton:disabled { opacity: 0.55; cursor: not-allowed; }
+
+/* Oculto en desktop */
+@media (min-width: 768px) {
+  .upbutton { display: none; }
+}
