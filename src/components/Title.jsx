@@ -8,6 +8,7 @@ export default function Title({
   return (
     <div className="cw-title-wrap" style={{ "--underline-color": underlineColor }}>
       <h1 className="cw-title">{text}</h1>
+      
     </div>
   );
 }
