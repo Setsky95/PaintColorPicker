@@ -91,11 +91,21 @@ if (normalized[2]) onActiveChange(normalized[2]);
           })}
         </div>
 
-        <div className="wheel-center">
-          <div className="wheel-center-inner">
-            {activeItem?.image ? <img alt={activeItem.name} src={activeItem.image} /> : null}
-          </div>
-        </div>
+      <div className="wheel-center">
+  <div className="wheel-center-inner">
+    {activeItem?.image ? (
+      <img
+        key={activeItem.image}                 // fuerza remontaje al cambiar src
+        alt={activeItem.name || ""}
+        src={activeItem.image}
+        className="wheel-center-img"           // nueva clase
+        loading="eager"
+        decoding="async"
+      />
+    ) : null}
+  </div>
+</div>
+
       </div>
 
       {activeItem && (
@@ -126,7 +136,7 @@ if (normalized[2]) onActiveChange(normalized[2]);
           galeria={(activeItem.galeriaSlug || activeItem.galeria).toLowerCase()}
           mapping={{ tl: 1, bl: 2, center: 3, rt: 4, rm: 6, rb: 5 }}
           baseFolderName="Fotos-galeria"
-          extension="png"
+          extension="webp"
         />
       ) : (
         <div style={{ opacity: 0.7 }}>Sin galería para este color.</div>

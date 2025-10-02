@@ -27,22 +27,7 @@ export default function Data({ name, code, hex, description, galeria }) {
         <span className="data-atributo">Alta adherencia</span>
         <span className="data-atributo">Impermeable</span>
       </div>
-      {/*  <div className="data-buttons">
-        <select className="data-atributo">
-          <option value="1lt">1 lt</option>
-          <option value="5lt">5 lt</option>
-          <option value="20lt">20 lt</option>
-        </select>
-        <div className="agregarAlCarrito">
-          <button
-            className="data-atributo"
-            style={{ backgroundColor: color }}
-            onClick={() => alert("agregado ")} 
-          >
-            Agregar al carrito 
-          </button>
-        </div>
-      </div> */}
+     
     </div>
   );
 }

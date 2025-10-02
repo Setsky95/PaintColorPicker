@@ -111,3 +111,61 @@ min-height: 100%;
 .gf-right { align-self: start; }
 .gf-right .gf-rt, .gf-right .gf-rm, .gf-right .gf-rb { aspect-ratio: 16 / 9; }
 }
+
+/* --- NUEVO: Animación de entrada + skeleton --- */
+
+/* Estado inicial (antes de que cargue la imagen) */
+.gf-tile {
+  opacity: 0;
+  transform: translateY(8px) scale(0.985);
+  transition:
+    opacity 420ms ease,
+    transform 420ms cubic-bezier(.22,.61,.36,1);
+  transition-delay: var(--gf-delay, 0ms);
+  will-change: opacity, transform;
+  position: relative; /* para el skeleton */
+}
+
+/* Shimmer skeleton mientras carga */
+.gf-tile::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg,
+      rgba(0,0,0,0.06) 0%,
+      rgba(0,0,0,0.12) 20%,
+      rgba(0,0,0,0.06) 40%
+    );
+  background-size: 200% 100%;
+  animation: gf-shimmer 1200ms linear infinite;
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+/* Al estar cargada la imagen, se revela y se apaga el skeleton */
+.gf-tile.is-loaded {
+  opacity: 1;
+  transform: none;
+}
+.gf-tile.is-loaded::before {
+  opacity: 0;
+  transition: opacity 300ms ease;
+}
+
+/* Keyframes del shimmer */
+@keyframes gf-shimmer {
+  0%   { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* Respeto a usuarios que prefieren menos movimiento */
+@media (prefers-reduced-motion: reduce) {
+  .gf-tile {
+    transition: none;
+    transform: none;
+  }
+  .gf-tile::before {
+    animation: none;
+  }
+}

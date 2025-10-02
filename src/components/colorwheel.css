@@ -74,11 +74,22 @@ gap: 2rem;
   text-align: center;
 }
 
-.wheel-center img {
+/* Quitá la anim original de .wheel-center img y usá esta clase */
+.wheel-center-img {
   width: 90%;
   height: 100%;
   display: block;
+  opacity: 0;
+  animation: fadeIn .5s ease-in forwards;
 }
+
+@keyframes fadeIn { to { opacity: 1; } }
+
+/* Accesibilidad: sin animaciones si el usuario lo prefiere */
+@media (prefers-reduced-motion: reduce) {
+  .wheel-center-img { animation: none; opacity: 1; }
+}
+
 
 .cw-legend {
   margin-top: 1.5rem; 
