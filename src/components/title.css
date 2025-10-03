@@ -3,6 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .cw-title {
@@ -16,6 +17,7 @@
   letter-spacing: 0.5px;
 }
 
+
 .cw-title::after {
   content: "";
   position: absolute;
@@ -27,6 +29,8 @@
   background: var(--underline-color, currentColor);
   border-radius: 9999px;
 }
+
+
 
 @media (max-width: 600px) {
   .cw-title {

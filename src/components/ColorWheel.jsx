@@ -95,10 +95,10 @@ if (normalized[2]) onActiveChange(normalized[2]);
   <div className="wheel-center-inner">
     {activeItem?.image ? (
       <img
-        key={activeItem.image}                 // fuerza remontaje al cambiar src
+        key={activeItem.image}                
         alt={activeItem.name || ""}
         src={activeItem.image}
-        className="wheel-center-img"           // nueva clase
+        className="wheel-center-img"           
         loading="eager"
         decoding="async"
       />
