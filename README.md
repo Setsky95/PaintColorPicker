@@ -19,6 +19,11 @@ Este muestrario digital funciona como una **demostración experimental**, una ma
 
 ---
 
+<p align="center">
+    <img alt="demo-image" src="/public/img/readme.jpg">
+  </a>
+</p>
+
 # 🎨 Digital Paint Sampler
 
 <p align="center">
